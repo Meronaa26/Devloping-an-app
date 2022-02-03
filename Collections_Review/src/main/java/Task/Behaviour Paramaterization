@@ -1,0 +1,18 @@
+
+Behaviour parameterization ==> is a software development pattern that lets you handle frequent requirement change
+==> it means taking a block of code and making it available without executing. this block of code can be called later by other parts of your programs
+==>you can pass the block of code as an argument to other method that will execute later
+   == the ability to tell a method to take multiple behaviour
+
+
+  **** HOW IT WORKS   ********
+   1=> create interface(is giving an option to create a method with out implementation)
+   2=>create the class to implementing the interface
+   3=>create the object from the implementation class and give a behaviour(method)
+
+
+
+
+   *****ENUM******* FROM GOOGLE
+   The main objective of enum is to define our own data types(Enumerated Data Types).
+   Declaration of enum in Java: Enum declaration can be done outside a Class or inside a Class but not inside a Method.

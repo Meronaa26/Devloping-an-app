@@ -1,0 +1,65 @@
+Biggest update in Java ==> LAMBDA
+
+
+why lambda ==>   enable functional programming
+
+
+Behavior Parameterization ==> is a software development pattern that let's you handle frequent requirement changes
+==> it means taking a block of code and making it available without executing . this block of code can be called later by other parts of your programs
+==> you can pass the block of code as an argument to other method that will execute later
+
+
+
+Question???
+
+LAMBDA : are just functions . they don't belong to any class. these functions can assume as values
+
+   String name  ="meron";
+
+   abc= ()-> system.out.println("quicksorting");
+
+   public void sort(()-> system.out.println("quicksorting")){
+   action();
+   }
+
+
+Function that takes parameter :
+weightApple = (Apple apple) -> apple.getweight()>150;
+lengthCount =(String s) ->s.length;
+myFunction = (int x , int y) -> {
+   system.out.println("result");
+   system.out.println(x+y)
+   }
+
+
+Creating Lambda :
+Step -1 : Create a new interface
+          interface MyLambda{
+
+          }
+
+Step-2 :Create a method , exact same signature with lambda expression
+
+           interface MyLambda{
+                      void print();
+                    }
+
+               MyLambda  myLambda =() ->system.out.println("sorting the array")
+
+
+              ********* WHEN TO USE LAMBDA ************
+              YOU CAN USE LAMBDA EXPRESSION IN THE CONTEXT OF A FUNCTIONAL INTERFACE
+
+              FUNCTIONAL INTERFACE ==> Is an interface that specifies exactly one abstract method
+              an interface is still a functional interface if it has many default methods as long as it specifies only one abstract method
+
+   Type inference:
+         interface StringlengthLambda{
+             int getLength(String s);
+         }
+
+         StringLengthLambda mylambda = s-> s.length
+         weightApple =apple -> apple.getweight()>150;
+
+         if you have only one argument , no need paranthesis
+

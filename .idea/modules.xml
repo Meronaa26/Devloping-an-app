@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/generics/generics.iml" filepath="$PROJECT_DIR$/generics/generics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Collections_Review/Collections_Review.iml" filepath="$PROJECT_DIR$/Collections_Review/Collections_Review.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Collections_Review/Lambda/Lambda.iml" filepath="$PROJECT_DIR$/Collections_Review/Lambda/Lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Streams/Streams.iml" filepath="$PROJECT_DIR$/Streams/Streams.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/java-review.iml" filepath="$PROJECT_DIR$/.idea/java-review.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oop-review/oop-review.iml" filepath="$PROJECT_DIR$/oop-review/oop-review.iml" />
     </modules>
   </component>
 </project>

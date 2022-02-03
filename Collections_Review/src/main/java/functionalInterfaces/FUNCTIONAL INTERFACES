@@ -1,0 +1,32 @@
+ JAVA API- FUNCTIONAL INTERFACES
+
+ java 8 has served new functional interfaces inside the java.util.function package :
+        ** predicate
+        ** consumer           ==> that means we don't have to create interface class with java 8 build we have java ready interfaces
+        **function           ==> you need to create interface with a method that matches signature with the lambda expression
+        **supplier
+        **runnable
+
+
+
+                   *******PREDICATE*****
+ ==>Predicate<T> interface defines an abstract method named test that accepts an object of generic type T and returns a boolean
+ ==> you can use this interface when you need to represent a boolean expression that uses an object of type T
+ ==> that returns boolean
+
+
+      @FunctionalInterface
+      public interface Predicate<T>{
+             boolean test(T t)  // A method comes with it
+      }
+
+
+       *******CONSUMER*****
+          ==> accept( T t )  method comes with it
+          ==> that doesn't have any return
+
+
+
+        *******CONSUMER*****
+        ==> accepts two parameter and doesn't return
+        ==> accept(T t , U u)

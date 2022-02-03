@@ -1,0 +1,32 @@
+
+
+@NOArgsConstructor
+        it will generate a no argument /default constructor
+        static fields are not initialized with in generated constructor for @NoArgsConstructor
+
+@AllArgsConstructor
+       it will generate a constructor with one parameter for each field in your class
+       it will not generate constructor argument for the statics fields
+       it willnot generate constructor argument for the fields if they are initialized(if it is final)
+
+
+@RequiredArgsConstructor
+       it will generate a constructor with required argument
+       required argument are  uninitialized final fields and fields with constraint such as @NonNull
+
+
+
+@DATA
+    it will generate
+  *getters for all fileds
+  *toString method
+  *hascode and equals implementaions
+  *setters for all non-final fileds
+  *constructor(@requiredargsconstructor)
+
+
+ @Builder
+
+ it produces the code automatically using Builder pattern. it can be applied at class level, constructor level and method level
+
+ Builder pattern is a commonly used creational design pattern in application development which solves the instance creation problems
