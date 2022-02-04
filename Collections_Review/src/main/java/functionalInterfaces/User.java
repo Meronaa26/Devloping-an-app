@@ -1,8 +1,14 @@
 package functionalInterfaces;
 
+
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
 public class User {
-    private String FirstName;
-    private String LastName;
+    private String firstName;
+    private String lastName;
     private int age;
 
 }

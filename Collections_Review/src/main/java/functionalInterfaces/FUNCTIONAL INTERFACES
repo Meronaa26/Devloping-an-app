@@ -30,3 +30,30 @@
         *******CONSUMER*****
         ==> accepts two parameter and doesn't return
         ==> accept(T t , U u)
+
+
+         *******FUNCTION*****
+         ==> accept sth and return sth
+         ==> <T, R> accept and return
+         ==>method name is apply(T t)
+         ==>      Function<String ,String> fun =s -> "Hello" + s
+                this is accepting String and returning String
+
+        ******************SUPPLIER********
+          ==>doesn't get any parameter and returns something
+          ==? method is get()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
