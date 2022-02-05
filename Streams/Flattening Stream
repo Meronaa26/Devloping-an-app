@@ -1,0 +1,52 @@
+The stream interface supports a flatMap method. It is used when we
+have a stream of collections and we want to flatten it rather than using
+map() method and getting the nested Stream.
+It is mapper function produces multiple value for each input value. It is
+called One-To-Many mapping.
+
+
+
+
+    MAP()                                                      FLATMAP()
+It processes stream of values                              It processes stream of stream of values
+It does only mapping                                       It performs mapping as well as flattening
+It is mapper function produces single value for           It is mapper function produces multiple values for each
+each input value                                                 input value
+
+
+
+It is a One-To-One mapping                                   It is a One-To-Many mapping
+Data Transformation : From Stream to Stream                  Data Transformation : From Stream<Stream> to Stream
+
+
+
+
+
+
+
+anyMatch : Checks if there is an element in the stream matching the
+given predicate
+allMatch : Checks if all the elements of the stream match the given
+predicate.
+noneMatch : Ensures no elements in the stream match the given
+predicate.
+findAny : Returns any element from a Stream.
+
+
+
+
+
+
+
+
+*************CREATING INIFNITE STREAMS**********************
+
+
+The Streams API provides two static methods to generate a stream
+from a function: Stream.iterate and Stream.generate
+These two operations let you create an infinite stream that does not
+have a fixed size.
+
+Stream.iterate(0,n->n+2)
+.limit(5)
+.forEach(System.out::println);

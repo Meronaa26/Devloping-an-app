@@ -1,0 +1,29 @@
+
+***********METHOD REFERENCES*******************
+
+Method references can be seen as shorthand for lambdas calling only a
+specific method. The basic idea is that if a lambda represents “call this method
+directly”, it is best to refer to the method by name rather than by a description
+of how to call it.
+When you need a method reference, the target reference is placed before the
+delimiter :: and the name of the method is provided after it.
+
+
+
+
+A Method reference to a static method (for example, the method parseInt of
+Integer, written Integer :: parseInt)
+
+A Method reference to an instance method of an arbitrary type (for example,
+the method length of a String, written String :: length)
+
+A method reference to an instance method of an existence object or expression
+(for example, suppose you have a local variable expensiveTransaction that
+holds an object of type Transaction, which supports an instance method
+getValue; you can write expensiveTransaction :: getValue)
+
+
+
+
+
+

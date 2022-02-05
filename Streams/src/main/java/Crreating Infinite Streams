@@ -1,0 +1,6 @@
+
+Creating Infinite Streams
+
+The streams API provides two static methods to generate a stream from a function: stream.iterate and stream.generate
+
+these two operations let you create an infinite stream that does not have a fixed size
