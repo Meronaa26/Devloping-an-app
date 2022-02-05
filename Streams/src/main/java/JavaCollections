@@ -1,0 +1,32 @@
+
+***************   JAVA COLLECTIONS   ****************
+
+Java Collectors is a utility class that provides many useful
+implementations of the Collector interface.
+The Collector implementation is used with the Stream.collect() method.
+The Collectors is a final class and all the methods are static that return
+the Collector instance.
+
+
+      toCollection(supplier)
+This function returns a Collector that accumulates the input elements
+into a collection.
+
+ArrayList<Integer> numberList = numbers.stream()
+.filter(x -> x%2==0)
+
+.collect(Collectors.toCollection(ArrayList::new));
+
+Set<Integer> numberList = numbers.stream()
+.filter(x -> x%2==0)
+
+
+****************     toList()    *************
+
+This function returns a Collector that accumulates the input elements
+into a new List.
+
+List<Integer> numberList = numbers.stream()
+.filter(x -> x%2==0)
+
+.collect(Collectors.toList());
