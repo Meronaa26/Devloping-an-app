@@ -1,0 +1,10 @@
+REDUCING
+There are some queries combine all the  elements in the stream repeatedly to produce a single value such as an integer
+these queries can be classified as reduction operation (a stream is reduced to a value)
+For example: Calculator the sum of all calories in the menu or what is the highest calorie dish in the menu
+
+Stream.reduce ()
+The stream interface supports a reduce method . This operation allows us to produce one single result from a sequence of elements
+It takes 2 arguments:
+an initial value
+A BinaryOperator<T>to combine two elements and produce a new value.
