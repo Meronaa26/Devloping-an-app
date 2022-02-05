@@ -1,0 +1,12 @@
+
+
+     OPTIONAL
+
+One of the most frequently exception in java programming is NullPointerException.
+A null value often represents an absence of value which has to be handled before
+proceeding with the usual business logic, which leads to unnecessary null checks.
+To handle such boiler plate code for null check situations. Java 8 introduced
+Optional class.
+Stream API and collection methods can return Optional objects. It may or may not
+contain a non-null value.
+Optional is a final class
