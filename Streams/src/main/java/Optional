@@ -10,3 +10,23 @@ Optional class.
 Stream API and collection methods can return Optional objects. It may or may not
 contain a non-null value.
 Optional is a final class
+
+
+
+It is a source of error. NullPointerException is by far the most common
+exception in java
+It bloats your code. It worsens readability by making it necessary to fill
+your code with null checks that are often deeply nested.
+It is meaningless. It does not have any semantic meaning.
+It creates a hole in the type system. Null carries no type or other
+information, so it can be assigned to any reference type.
+
+
+
+
+Java 8 introduced a new class called java.util.Optional<T>
+The class encapsulates an optional value.
+If you know that a person may not have a car, the car variable inside
+the Person class should not be declared type Car and assigned to null
+reference when the person does not own a car, instead it should be
+type Optional<Car>
