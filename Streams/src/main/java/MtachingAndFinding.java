@@ -18,12 +18,13 @@ public class MtachingAndFinding {
         System.out.println(isHealthy2);
 
         // Find ANY
+        System.out.println("***********OPTIONAL*********");
         Optional<Dish> dish =DishData.getAll().stream().filter(Dish::isVegetarian).findAny();
-        System.out.println(dish);
+        System.out.println(dish.get());
 
         //FIND FIRST
         Optional<Dish> dish2 =DishData.getAll().stream().filter(Dish::isVegetarian).findFirst();
-        System.out.println(dish2);
+        System.out.println(dish2.get());
 
     }
 }
