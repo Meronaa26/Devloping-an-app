@@ -19,12 +19,15 @@ public class StateTest {
         tx.addCity("Dallas");
         tx.addCity("Plano");
         tx.addCity("Austin");
-        tx.addCity(" Houston");
+        tx.addCity("Houston");
 
 
         List<State> list =Arrays.asList(va, tx);
          list.stream().map(state -> state.getCities()).forEach(System.out::println);
-        System.out.println("************ANOTHER WAY*************");
+
+        System.out.println("************Flat map 1*************");
          list.stream().map(st->st.getCities()).flatMap(Collection::stream).forEach(System.out::println);
+        System.out.println("************Flat MAp 2*************");
+        list.stream().map(st2->st2.getCities()).flatMap(List::stream).forEach(System.out::println);
     }
 }

@@ -1,0 +1,18 @@
+
+Flattening Streams:
+the stream interface supports a flatMap method.It is used when we have a stream of collections and we want to flatten it rather than using map()
+method and getting the nested stream.
+it is mapper function produces multiple value for each input value. it is called One -To- Many mapping
+
+
+
+
+anyMatch : checks if there is an element  in the stream matching the given predicate  // returns True or False / boolean
+allMatch : checks if all the elements of the stream match the given predicate
+noneMatch : Ensures no elements in the stream match the given predicate
+findAny : Returns any element from a Stream
+
+
+
+
+
